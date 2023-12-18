@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stripe Payment Demo</title>
+</head>
+<body>
+    <h3>Welcome to PaymentLand</h3>
+    <form action="payment" method="POST">
+        <script
+            src="https://checkout.stripe.com/checkout.js"
+            class="stripe-button"
+            data-key="<%= key %>"
+            data-amount="7000"
+            data-currency="usd"
+            data-name="PAYMENT LAND"
+            data-description="Buy the object"
+            data-locale="auto">
+        </script>
+    </form>
+</body>
+</html>
+
