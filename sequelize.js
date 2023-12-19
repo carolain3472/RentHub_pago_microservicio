@@ -1,16 +1,6 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize({
-  dialect: 'postgres',
-  host: 'localhost',
-  port: 5432,
-  username: 'postgres',
-  password: 'carolain',
-  database: 'pagos_renthub',
-  define: {
-    timestamps: false, // Desactiva la creación automática de createdAt y updatedAt
-  },
-});
+const sequelize = new Sequelize('postgres://pagos_renthub_user:e6PucSbFzWXuXRmuikqB9OtmgFwlZots@dpg-cm0ha521hbls73dal070-a/pagos_renthub');
 
 module.exports = sequelize;
 
