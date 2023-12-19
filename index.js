@@ -1,11 +1,11 @@
 var apm = require('elastic-apm-node').start({
-  serviceName: 'my-service-name',
+  serviceName: 'renthub_payment_backend',
 
   secretToken: 'BgqkrxPiNnk6MmnOkl',
 
   serverUrl: 'https://17753c254e824399b755a1a7f8dd9573.apm.us-central1.gcp.cloud.es.io:443',
 
-  environment: 'my-environment'
+  environment: 'payment-environment'
 })
 
 const express = require('express')
